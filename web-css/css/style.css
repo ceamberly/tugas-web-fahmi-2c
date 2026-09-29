@@ -1,0 +1,115 @@
+/* u0ntuk body gunakan warna latar belakang abu-abu gelap dan ukuran font 16 arial sans serif */
+body {
+    background-color: #333;
+    color: #333;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+/* untuk container gunakan warna putih dengan width atau lebar 800px dan margin auto */
+.container {
+    background-color: #fff;
+    width: 800px;
+    margin: auto;
+}
+
+/* mengatur jarak dalam header padding top 20px, padding right dan left 20px */
+.header {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+/* untuk header .judul gunakan ukuran font 40px. tebal dan margin dibawah bottom 5px */
+.header .judul {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+/* mengatur display inline-block agar bisa diberikan dimensi */
+.nav {
+    padding: 0px;
+}
+
+.nav li {
+    /* agar menjadi kesamping tidak kebawah, gunakan display inline-block dan margin kanan 10px */
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+/* menghilangkan garis bawah link */
+.nav li a {
+    text-decoration: none;
+    color: navy;
+}
+
+/* ketika navigasi disorot mouse */
+.nav li a:hover {
+    background-color: lightblue;
+    color: white;
+}
+
+/* untuk banner css */
+.banner {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    /* atur ukuran gambar */
+    background-size: cover;
+   /* mengatur posisi gambar */
+    background-position: 0px -300px;
+    /* mengatur garis tepi tebal dan warna merah maroon */
+    border-top: 5px solid rgb(73, 31, 31);
+    border-bottom: 5px solid rgb(73, 31, 31);
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* untuk isi */
+.isi {
+    padding: 20px;
+}
+
+.isi h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.isi penulis {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.isi penulis a {
+    text-decoration: none;
+    color: navy;
+}
+
+.isi p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* untuk footer */
+.footer {
+    background-color: #141211;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer .copyright {
+    margin: 0;
+    font-size: 14px;
+    color: #fff;
+}   
