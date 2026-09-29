@@ -1,26 +1,27 @@
-/* u0ntuk body gunakan warna latar belakang abu-abu gelap dan ukuran font 16 arial sans serif */
+/* Untuk body gunakan warna latar belakang abu-abu gelap dan ukuran font 16 arial sans serif */
 body {
     background-color: #333;
-    color: #333;
+    color: #fff;
     font-size: 16px;
     font-family: Arial, sans-serif;
 }
 
-/* untuk container gunakan warna putih dengan width atau lebar 800px dan margin auto */
+/* Untuk container gunakan warna putih dengan width atau lebar 800px dan margin auto */
 .container {
     background-color: #fff;
+    color: #333; /* Mengembalikan warna teks di dalam container putih menjadi gelap agar terbaca */
     width: 800px;
     margin: auto;
 }
 
-/* mengatur jarak dalam header padding top 20px, padding right dan left 20px */
+/* Mengatur jarak dalam header padding top 20px, padding right dan left 20px */
 .header {
     padding-top: 20px;
     padding-right: 20px;
     padding-left: 20px;
 }
 
-/* untuk header .judul gunakan ukuran font 40px. tebal dan margin dibawah bottom 5px */
+/* Untuk header .judul gunakan ukuran font 40px, tebal, dan margin bawah 5px */
 .header .judul {
     font-size: 40px;
     font-weight: bold;
@@ -28,40 +29,42 @@ body {
     text-align: center;
 }
 
-/* mengatur display inline-block agar bisa diberikan dimensi */
+/* Mengatur navigasi */
 .nav {
     padding: 0px;
+    text-align: center; /* Agar menu navigasi berada di tengah */
 }
 
 .nav li {
-    /* agar menjadi kesamping tidak kebawah, gunakan display inline-block dan margin kanan 10px */
+    /* Agar menjadi ke samping tidak ke bawah, gunakan display inline-block dan margin kanan 10px */
     display: inline-block;
     margin-right: 10px;
     margin-top: 20px;
 }
 
-/* menghilangkan garis bawah link */
+/* Menghilangkan garis bawah link */
 .nav li a {
     text-decoration: none;
     color: navy;
+    padding: 5px 10px;
 }
 
-/* ketika navigasi disorot mouse */
+/* Ketika navigasi disorot mouse */
 .nav li a:hover {
     background-color: lightblue;
     color: white;
 }
 
-/* untuk banner css */
+/* Untuk banner css */
 .banner {
     width: 100%;
     height: 300px;
     overflow: hidden;
-    /* atur ukuran gambar */
+    /* Atur ukuran gambar */
     background-size: cover;
-   /* mengatur posisi gambar */
+    /* Mengatur posisi gambar */
     background-position: 0px -300px;
-    /* mengatur garis tepi tebal dan warna merah maroon */
+    /* Mengatur garis tepi tebal dan warna merah maroon */
     border-top: 5px solid rgb(73, 31, 31);
     border-bottom: 5px solid rgb(73, 31, 31);
 }
@@ -72,7 +75,7 @@ body {
     object-fit: cover;
 }
 
-/* untuk isi */
+/* Untuk isi */
 .isi {
     padding: 20px;
 }
@@ -83,13 +86,15 @@ body {
     margin-bottom: 10px;
 }
 
-.isi penulis {
-    font-size: 16px;
+/* Diperbaiki: Ditambahkan tanda titik (.) karena penulis adalah sebuah class */
+.isi .penulis {
+    font-size: 14px;
+    color: #666;
     line-height: 1.5;
     margin-bottom: 20px;
 }
 
-.isi penulis a {
+.isi .penulis a {
     text-decoration: none;
     color: navy;
 }
@@ -100,7 +105,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* untuk footer */
+/* Untuk footer */
 .footer {
     background-color: #141211;
     color: #fff;
@@ -112,4 +117,4 @@ body {
     margin: 0;
     font-size: 14px;
     color: #fff;
-}   
+}
