@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selamat Datang di Website Saya</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-gray-100 font-sans min-h-screen flex flex-col">
+
+  <!-- NAVBAR -->
+
+  <nav class="bg-green-600 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+
+  <div class="flex items-center justify-between min-h-16">
+
+    <!-- Logo / Judul -->
+    <h1 class="text-lg sm:text-xl font-bold">
+      Website Saya
+    </h1>
+
+    <!-- Menu Desktop -->
+    <div class="hidden md:flex items-center gap-5 lg:gap-8">
+      <a href="#" class="hover:text-green-200 transition">Home</a>
+      <a href="#" class="hover:text-green-200 transition">Product</a>
+      <a href="#" class="hover:text-green-200 transition">Service</a>
+      <a href="#" class="hover:text-green-200 transition">Contact</a>
+      <a href="#" class="hover:text-green-200 transition">About</a>
+    </div>
+
+    <!-- Tombol Menu Mobile -->
+    <button
+      id="menuButton"
+      class="md:hidden text-2xl focus:outline-none"
+      aria-label="Buka menu">
+      ☰
+    </button>
+
+  </div>
+
+  <!-- Menu Mobile -->
+  <div id="mobileMenu" class="hidden md:hidden pb-4">
+    <div class="flex flex-col gap-3 pt-2">
+
+      <a href="#" class="py-2 px-3 rounded hover:bg-green-700">
+        Home
+      </a>
+
+      <a href="#" class="py-2 px-3 rounded hover:bg-green-700">
+        Product
+      </a>
+
+      <a href="#" class="py-2 px-3 rounded hover:bg-green-700">
+        Service
+      </a>
+
+      <a href="#" class="py-2 px-3 rounded hover:bg-green-700">
+        Contact
+      </a>
+
+      <a href="#" class="py-2 px-3 rounded hover:bg-green-700">
+        About
+      </a>
+
+    </div>
+  </div>
+
+</div>
+
+
+  </nav>
+
+  <!-- MAIN -->
+
+  <main class="flex-1">
+
+
+<!-- HERO IMAGE -->
+<section class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 sm:py-8">
+
+  <div class="text-center">
+    <img
+      src="foto.jpg"
+      alt="Foto utama"
+      class="w-full max-w-4xl h-auto mx-auto rounded-lg shadow-lg object-cover">
+  </div>
+
+</section>
+
+
+<!-- ARTIKEL -->
+<section class="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
+
+  <article class="bg-white p-5 sm:p-6 lg:p-8 rounded-lg shadow-md">
+
+    <h2 class="text-xl sm:text-2xl lg:text-3xl font-semibold mb-2">
+      Judul Artikel
+    </h2>
+
+    <p class="text-gray-500 text-sm mb-4">
+      Oleh — Muhammad Fahmi
+    </p>
+
+    <p class="text-gray-700 text-sm sm:text-base lg:text-lg leading-relaxed">
+      Pagi hari di desa selalu menghadirkan ketenangan yang luar biasa
+      ketika kabut tipis perlahan-lahan mengangkat tirainya dari
+      permukaan sawah yang menghijau, sementara suara gemercik air sungai
+      yang jernih berpadu selaras dengan kicauan burung-burung kecil yang
+      riang menyambut datangnya sang mentari dari balik bukit.
+    </p>
+
+  </article>
+
+</section>
+
+
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer class="bg-gray-800 text-white text-center py-4 px-4">
+
+
+<p class="text-sm sm:text-base">
+  Created with ♥ Muhammad Fahmi
+</p>
+
+
+  </footer>
+
+  <!-- JAVASCRIPT MENU MOBILE -->
+
+  <script>
+    const menuButton = document.getElementById("menuButton");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuButton.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+
+</body>
+</html>
