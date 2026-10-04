@@ -677,7 +677,7 @@ img {
         2;
 
     max-width:
-        430px;
+        280px;
 
     margin:
         auto;
@@ -1850,7 +1850,7 @@ img {
     .hero-image-wrapper {
 
         max-width:
-            320px;
+            240px;
 
     }
 
@@ -1879,4 +1879,149 @@ img {
 
     }
 
+}
+/* =========================================================
+   HERO POSITION FIX
+   Hanya membenahi posisi Hero agar lebih rapi dan center
+   ========================================================= */
+
+.hero-section {
+    min-height: 100vh;
+    padding-top: 110px;
+    padding-bottom: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-section .container {
+    width: 100%;
+}
+
+.hero-section .row {
+    min-height: calc(100vh - 180px);
+    align-items: center !important;
+}
+
+/* BAGIAN KIRI */
+
+.hero-content {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* JUDUL */
+
+.hero-title {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    line-height: 0.95;
+}
+
+/* DESKRIPSI */
+
+.hero-description {
+    max-width: 580px;
+}
+
+/* BUTTON */
+
+.hero-actions {
+    margin-top: 25px;
+}
+
+/* SOSIAL */
+
+.social-wrapper {
+    margin-top: 25px;
+}
+
+/* FOTO PROFIL */
+
+.hero-image-wrapper {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/* SUPAYA FOTO TETAP RAPI */
+
+.hero-image-card {
+    width: 100%;
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+    .hero-section {
+        min-height: auto;
+        padding-top: 120px;
+        padding-bottom: 80px;
+    }
+
+    .hero-section .row {
+        min-height: auto;
+    }
+
+    .hero-content {
+        text-align: center;
+        margin: 0 auto 50px;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .social-wrapper {
+        justify-content: center;
+    }
+
+    .hero-image-wrapper {
+        max-width: 260px;
+        margin: 0 auto;
+    }
+
+    .scroll-indicator {
+        display: none;
+    }
+}
+
+
+/* =========================================================
+   HP
+   ========================================================= */
+
+@media (max-width: 575px) {
+
+    .hero-section {
+        padding-top: 105px;
+        padding-bottom: 60px;
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+    }
+
+    .hero-image-wrapper {
+        max-width: 230px;
+    }
+
+}
+/* =====================================================
+   FIX FOTO PROFIL AGAR TIDAK MIRING
+===================================================== */
+
+.hero-image-card {
+    transform: none !important;
+}
+
+.hero-image-card img {
+    transform: none !important;
 }
