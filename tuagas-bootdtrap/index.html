@@ -2,6 +2,7 @@
 <html lang="id">
 
 <head>
+
     <meta charset="UTF-8">
 
     <meta
@@ -9,34 +10,32 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <meta
-        name="description"
-        content="Portfolio personal dan artikel tentang perjalanan saya di dunia teknologi."
-    >
+    <title>Portfolio | Fahmi.</title>
 
-    <title>Portfolio | Fahmi</title>
 
-    <!-- ==================================================
+    <!-- =====================================================
          BOOTSTRAP
-    ================================================== -->
+         ===================================================== -->
 
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         rel="stylesheet"
     >
 
-    <!-- ==================================================
+
+    <!-- =====================================================
          BOOTSTRAP ICONS
-    ================================================== -->
+         ===================================================== -->
 
     <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     >
 
-    <!-- ==================================================
+
+    <!-- =====================================================
          GOOGLE FONT
-    ================================================== -->
+         ===================================================== -->
 
     <link
         rel="preconnect"
@@ -50,13 +49,14 @@
     >
 
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
         rel="stylesheet"
     >
 
-    <!-- ==================================================
-         CUSTOM CSS
-    ================================================== -->
+
+    <!-- =====================================================
+         CSS
+         ===================================================== -->
 
     <link
         rel="stylesheet"
@@ -69,1172 +69,1094 @@
 <body>
 
 
-    <!-- ==================================================
-         NAVBAR
-    ================================================== -->
+<!-- =========================================================
+     NAVBAR
+     ========================================================= -->
 
-    <nav
-        class="navbar navbar-expand-lg fixed-top"
-        id="mainNavbar"
-    >
+<nav
+    id="mainNavbar"
+    class="navbar navbar-expand-lg fixed-top"
+>
 
-        <div class="container">
-
-            <!-- LOGO -->
-
-            <a
-                class="navbar-brand"
-                href="#home"
-            >
-
-                <span class="brand-symbol">●</span>
-
-                <span>
-                    PORTFOLIO
-                </span>
-
-            </a>
+    <div class="container">
 
 
-            <!-- MOBILE MENU BUTTON -->
-
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarMenu"
-                aria-controls="navbarMenu"
-                aria-expanded="false"
-                aria-label="Buka menu"
-            >
-
-                <i class="bi bi-list"></i>
-
-            </button>
+        <a
+            class="navbar-brand"
+            href="#home"
+        >
+            Fahmi.
+        </a>
 
 
-            <!-- MENU -->
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMenu"
+            aria-controls="navbarMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
 
-            <div
-                class="collapse navbar-collapse"
-                id="navbarMenu"
-            >
+            <span class="navbar-toggler-icon"></span>
 
-                <ul class="navbar-nav mx-auto">
-
-                    <li class="nav-item">
-
-                        <a
-                            class="nav-link active"
-                            href="#home"
-                        >
-                            Home
-                        </a>
-
-                    </li>
+        </button>
 
 
-                    <li class="nav-item">
+        <div
+            class="collapse navbar-collapse"
+            id="navbarMenu"
+        >
 
-                        <a
-                            class="nav-link"
-                            href="#article"
-                        >
-                            Article
-                        </a>
-
-                    </li>
+            <ul class="navbar-nav ms-auto">
 
 
-                    <li class="nav-item">
-
-                        <a
-                            class="nav-link"
-                            href="#skills"
-                        >
-                            Skills
-                        </a>
-
-                    </li>
+                <li class="nav-item">
+                    <a
+                        class="nav-link active"
+                        href="#home"
+                    >
+                        Home
+                    </a>
+                </li>
 
 
-                    <li class="nav-item">
-
-                        <a
-                            class="nav-link"
-                            href="#projects"
-                        >
-                            Projects
-                        </a>
-
-                    </li>
+                <li class="nav-item">
+                    <a
+                        class="nav-link"
+                        href="#article"
+                    >
+                        Article
+                    </a>
+                </li>
 
 
-                    <li class="nav-item">
+                <li class="nav-item">
+                    <a
+                        class="nav-link"
+                        href="#about"
+                    >
+                        About
+                    </a>
+                </li>
 
-                        <a
-                            class="nav-link"
-                            href="#contact"
-                        >
-                            Contact
-                        </a>
 
-                    </li>
+                <li class="nav-item">
+                    <a
+                        class="nav-link"
+                        href="#skills"
+                    >
+                        Skills
+                    </a>
+                </li>
 
-                </ul>
 
-            </div>
+                <li class="nav-item">
+                    <a
+                        class="nav-link"
+                        href="#projects"
+                    >
+                        Projects
+                    </a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a
+                        class="nav-link"
+                        href="#contact"
+                    >
+                        Contact
+                    </a>
+                </li>
+
+
+            </ul>
 
         </div>
 
-    </nav>
+    </div>
 
+</nav>
 
 
-    <!-- ==================================================
-         HERO / HOME
-    ================================================== -->
 
-    <main>
+<main>
 
-        <section
-            id="home"
-            class="hero-section"
-        >
 
-            <!-- BACKGROUND DECORATION -->
+<!-- =========================================================
+     HERO
+     ========================================================= -->
 
-            <div class="hero-glow glow-one"></div>
+<section
+    id="home"
+    class="hero-section"
+>
 
-            <div class="hero-glow glow-two"></div>
 
+    <div class="container">
 
-            <div class="container">
+        <div class="row align-items-center min-vh-100">
 
-                <div class="row align-items-center">
 
+            <!-- TEXT -->
 
-                    <!-- HERO TEXT -->
-
-                    <div class="col-lg-7">
-
-                        <div
-                            class="hero-content"
-                            data-animation="fade-up"
-                        >
-
-                            <p class="eyebrow">
-                                PORTFOLIO / 2026
-                            </p>
-
-
-                            <h1 class="hero-title">
-
-                                Hi, I'm
-
-                                <span>
-                                    Fahmi.
-                                </span>
-
-                            </h1>
-
-
-                            <p class="hero-role">
-
-                                Web Developer
-
-                                <span>•</span>
-
-                                Student
-
-                            </p>
-
-
-                            <p class="hero-description">
-
-                                Saya sedang membangun,
-                                belajar, dan mengeksplorasi
-                                dunia teknologi melalui
-                                website dan berbagai
-                                proyek digital.
-
-                            </p>
-
-
-                            <!-- BUTTON -->
-
-                            <div class="hero-actions">
-
-                                <a
-                                    href="#article"
-                                    class="button button-primary"
-                                >
-
-                                    Read My Story
-
-                                    <i class="bi bi-arrow-down"></i>
-
-                                </a>
-
-
-                                <a
-                                    href="#projects"
-                                    class="button button-outline"
-                                >
-
-                                    View Projects
-
-                                    <i class="bi bi-arrow-up-right"></i>
-
-                                </a>
-
-                            </div>
-
-
-                            <!-- SOCIAL MEDIA -->
-
-                            <div class="social-wrapper">
-
-                                <span>
-                                    FIND ME
-                                </span>
-
-
-                                <div class="social-links">
-
-
-                                    <!-- INSTAGRAM -->
-
-                                    <a
-                                        href="https://instagram.com/phmiex"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        aria-label="Instagram"
-                                    >
-
-                                        <i class="bi bi-instagram"></i>
-
-                                    </a>
-
-
-                                    <!-- GITHUB -->
-
-                                    <a
-                                        href="https://github.com/ceamberly"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        aria-label="GitHub"
-                                    >
-
-                                        <i class="bi bi-github"></i>
-
-                                    </a>
-
-
-                                    <!-- YOUTUBE -->
-
-                                    <a
-                                        href="https://youtube.com/@ceamberly"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        aria-label="YouTube"
-                                    >
-
-                                        <i class="bi bi-youtube"></i>
-
-                                    </a>
-
-
-                                    <!-- TIKTOK -->
-
-                                    <a
-                                        href="https://tiktok.com/@ceamberly"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        aria-label="TikTok"
-                                    >
-
-                                        <i class="bi bi-tiktok"></i>
-
-                                    </a>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <!-- PROFILE IMAGE -->
-
-                    <div class="col-lg-5">
-
-                        <div
-                            class="hero-image-wrapper"
-                            data-animation="fade-left"
-                        >
-
-                            <div class="image-decoration"></div>
-
-
-                            <div class="hero-image-card">
-
-                                <img
-                                    src="img/profile.jpg"
-                                    alt="Foto profil Fahmi"
-                                >
-
-
-                                <div class="image-caption">
-
-                                    <div>
-
-                                        <small>
-                                            CURRENTLY
-                                        </small>
-
-                                        <strong>
-                                            Learning & Building
-                                        </strong>
-
-                                    </div>
-
-
-                                    <span class="status-dot"></span>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- SCROLL INDICATOR -->
-
-            <a
-                href="#article"
-                class="scroll-indicator"
-                aria-label="Scroll ke artikel"
+            <div
+                class="col-lg-7 hero-content"
+                data-animation="fade-up"
             >
 
-                <span>
-                    SCROLL
-                </span>
-
-                <i class="bi bi-arrow-down"></i>
-
-            </a>
-
-        </section>
+                <p class="hero-label">
+                    PORTFOLIO
+                </p>
 
 
-
-        <!-- ==================================================
-             ARTICLE
-        ================================================== -->
-
-        <section
-            id="article"
-            class="article-section"
-        >
-
-            <div class="container">
-
-                <div class="section-header">
-
-                    <p class="section-number">
-                        01 / ARTICLE
-                    </p>
+                <h1 class="hero-title">
+                    Hello, I'm
+                    <span>Fahmi.</span>
+                </h1>
 
 
-                    <h2>
+                <h2 class="hero-subtitle">
+                    Web Developer
+                    <span>•</span>
+                    Student
+                </h2>
 
-                        A little story
 
-                        <em>
-                            about me.
-                        </em>
+                <p class="hero-description">
 
-                    </h2>
+                    Saya adalah seorang mahasiswa yang
+                    tertarik dengan dunia web development,
+                    teknologi, dan desain digital.
+
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="#projects"
+                        class="btn-main"
+                    >
+                        Lihat Project
+                    </a>
+
+
+                    <a
+                        href="#contact"
+                        class="btn-outline"
+                    >
+                        Hubungi Saya
+                    </a>
 
                 </div>
 
 
-                <div class="row">
+                <!-- SOCIAL -->
+
+                <div class="social-links">
 
 
-                    <!-- ARTICLE INTRO -->
+                    <a
+                        href="https://instagram.com/phmiex"
+                        target="_blank"
+                        aria-label="Instagram"
+                    >
+                        <i class="bi bi-instagram"></i>
+                    </a>
 
-                    <div class="col-lg-4">
 
-                        <div
-                            class="article-intro"
-                            data-animation="fade-up"
+                    <a
+                        href="https://github.com/ceamberly"
+                        target="_blank"
+                        aria-label="GitHub"
+                    >
+                        <i class="bi bi-github"></i>
+                    </a>
+
+
+                    <a
+                        href="https://youtube.com/@ceamberly"
+                        target="_blank"
+                        aria-label="YouTube"
+                    >
+                        <i class="bi bi-youtube"></i>
+                    </a>
+
+
+                    <a
+                        href="https://tiktok.com/@ceamberly"
+                        target="_blank"
+                        aria-label="TikTok"
+                    >
+                        <i class="bi bi-tiktok"></i>
+                    </a>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PHOTO -->
+
+            <div
+                class="col-lg-5"
+                data-animation="fade-left"
+            >
+
+                <div class="hero-image-wrapper">
+
+                    <div class="hero-image-frame">
+
+                        <img
+                            src="img/profile.jpg"
+                            alt="Foto Fahmi"
+                            class="hero-image"
                         >
-
-                            <span class="article-label">
-                                MY JOURNEY
-                            </span>
-
-
-                            <p>
-
-                                Perjalanan saya dimulai
-                                dari rasa penasaran
-                                terhadap bagaimana
-                                sebuah website dibuat.
-
-                            </p>
-
-                        </div>
 
                     </div>
 
 
-                    <!-- ARTICLE CONTENT -->
-
-                    <div class="col-lg-7 offset-lg-1">
-
-                        <article
-                            class="article-content"
-                            data-animation="fade-up"
-                        >
-
-                            <p class="article-lead">
-
-                                Saya percaya bahwa belajar
-                                teknologi bukan hanya
-                                tentang menulis kode,
-                                tetapi tentang bagaimana
-                                sebuah ide dapat menjadi
-                                sesuatu yang nyata.
-
-                            </p>
-
-
-                            <p>
-
-                                Saat ini saya sedang
-                                mempelajari berbagai hal
-                                dalam pengembangan website.
-                                Mulai dari HTML, CSS,
-                                JavaScript, hingga
-                                framework seperti Bootstrap.
-
-                            </p>
-
-
-                            <p>
-
-                                Setiap project yang saya
-                                buat menjadi bagian dari
-                                proses belajar. Dari
-                                kesalahan kecil sampai
-                                sesuatu yang berhasil
-                                berjalan dengan baik,
-                                semuanya memberikan
-                                pengalaman baru.
-
-                            </p>
-
-
-                            <p>
-
-                                Tujuan saya adalah terus
-                                berkembang dan menciptakan
-                                website yang tidak hanya
-                                terlihat menarik, tetapi
-                                juga nyaman digunakan,
-                                responsive, dan memiliki
-                                pengalaman pengguna yang baik.
-
-                            </p>
-
-
-                            <blockquote>
-
-                                "Keep learning.
-                                Keep building.
-                                Keep improving."
-
-                            </blockquote>
-
-                        </article>
-
+                    <div class="hero-decoration">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
 
                 </div>
 
             </div>
 
-        </section>
+
+        </div>
+
+    </div>
+
+</section>
 
 
 
-        <!-- ==================================================
-             ABOUT
-        ================================================== -->
+<!-- =========================================================
+     ARTICLE
+     ========================================================= -->
 
-        <section
-            id="about"
-            class="about-section"
+<section
+    id="article"
+    class="article-section section-padding"
+>
+
+
+    <div class="container">
+
+
+        <div
+            class="section-heading"
+            data-animation="fade-up"
         >
 
-            <div class="container">
+            <p class="section-label">
+                01 — ARTICLE
+            </p>
 
-                <div class="row align-items-center">
+            <h2>
+                My Digital Journey
+            </h2>
+
+            <p>
+                Sedikit cerita mengenai perjalanan saya
+                dalam mempelajari dunia teknologi dan web.
+            </p>
+
+        </div>
 
 
-                    <div class="col-lg-6">
 
-                        <div
-                            class="about-image"
-                            data-animation="fade-right"
+        <div class="row g-4">
+
+
+            <div
+                class="col-lg-8"
+                data-animation="fade-up"
+            >
+
+                <article class="main-article">
+
+                    <div class="article-image">
+
+                        <img
+                            src="img/about.jpg"
+                            alt="Web Development"
                         >
-
-                            <img
-                                src="img/about.jpg"
-                                alt="Tentang saya"
-                            >
-
-                        </div>
 
                     </div>
 
 
-                    <div class="col-lg-6">
+                    <div class="article-content">
 
-                        <div
-                            class="about-content"
-                            data-animation="fade-left"
+                        <p class="article-date">
+                            JOURNEY • 2026
+                        </p>
+
+
+                        <h3>
+                            Belajar, Membuat,
+                            dan Terus Berkembang
+                        </h3>
+
+
+                        <p>
+
+                            Dunia web development membuat saya
+                            tertarik untuk memahami bagaimana sebuah
+                            website dirancang dari awal hingga dapat
+                            digunakan oleh banyak orang.
+
+                        </p>
+
+
+                        <p>
+
+                            Dari mempelajari HTML, CSS, JavaScript,
+                            hingga framework seperti Bootstrap,
+                            setiap project menjadi pengalaman baru
+                            untuk meningkatkan kemampuan saya.
+
+                        </p>
+
+
+                        <a
+                            href="#about"
+                            class="article-link"
                         >
-
-                            <p class="section-number">
-                                02 / ABOUT
-                            </p>
-
-
-                            <h2>
-
-                                More than
-
-                                <em>
-                                    just code.
-                                </em>
-
-                            </h2>
-
-
-                            <p>
-
-                                Saya menyukai proses
-                                menciptakan sesuatu
-                                dari awal. Mulai dari
-                                mencari ide, membuat
-                                desain, menulis kode,
-                                sampai melihat hasil
-                                akhirnya.
-
-                            </p>
-
-
-                            <div class="about-info">
-
-                                <div>
-
-                                    <span>
-                                        BASED IN
-                                    </span>
-
-                                    <strong>
-                                        Indonesia
-                                    </strong>
-
-                                </div>
-
-
-                                <div>
-
-                                    <span>
-                                        FIELD
-                                    </span>
-
-                                    <strong>
-                                        Web Development
-                                    </strong>
-
-                                </div>
-
-
-                                <div>
-
-                                    <span>
-                                        STATUS
-                                    </span>
-
-                                    <strong>
-                                        Student
-                                    </strong>
-
-                                </div>
-
-                            </div>
-
-                        </div>
+                            Baca Selengkapnya
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
 
                     </div>
+
+                </article>
+
+            </div>
+
+
+
+            <!-- ASIDE -->
+
+            <div
+                class="col-lg-4"
+                data-animation="fade-left"
+            >
+
+                <aside class="article-sidebar">
+
+
+                    <p class="section-label">
+                        QUICK INFO
+                    </p>
+
+
+                    <h3>
+                        About Me
+                    </h3>
+
+
+                    <p>
+
+                        Mahasiswa yang sedang belajar
+                        membangun website modern,
+                        responsive, dan menarik.
+
+                    </p>
+
+
+                    <div class="info-item">
+
+                        <span>
+                            Status
+                        </span>
+
+                        <strong>
+                            Student
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <span>
+                            Focus
+                        </span>
+
+                        <strong>
+                            Web Development
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <span>
+                            Location
+                        </span>
+
+                        <strong>
+                            Indonesia
+                        </strong>
+
+                    </div>
+
+
+                </aside>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     ABOUT
+     ========================================================= -->
+
+<section
+    id="about"
+    class="about-section section-padding"
+>
+
+
+    <div class="container">
+
+
+        <div class="row align-items-center g-5">
+
+
+            <div
+                class="col-lg-5"
+                data-animation="fade-right"
+            >
+
+                <div class="about-image">
+
+                    <img
+                        src="img/about.jpg"
+                        alt="About Me"
+                    >
 
                 </div>
 
             </div>
 
-        </section>
 
 
+            <div
+                class="col-lg-7"
+                data-animation="fade-up"
+            >
 
-        <!-- ==================================================
-             SKILLS
-        ================================================== -->
-
-        <section
-            id="skills"
-            class="skills-section"
-        >
-
-            <div class="container">
-
-                <div class="section-header">
-
-                    <p class="section-number">
-                        03 / SKILLS
-                    </p>
+                <p class="section-label">
+                    02 — ABOUT ME
+                </p>
 
 
-                    <h2>
-
-                        Things I
-
-                        <em>
-                            work with.
-                        </em>
-
-                    </h2>
-
-                </div>
+                <h2 class="section-title">
+                    Mengenal Saya
+                    Lebih Dekat
+                </h2>
 
 
-                <div class="row g-4">
+                <p class="about-text">
+
+                    Saya adalah seorang mahasiswa yang
+                    memiliki ketertarikan terhadap teknologi
+                    dan pengembangan website.
+
+                </p>
 
 
-                    <!-- HTML -->
+                <p class="about-text">
 
-                    <div class="col-md-6 col-lg-3">
+                    Saya senang mempelajari hal-hal baru,
+                    mencoba membuat project sendiri,
+                    dan mengembangkan kemampuan coding
+                    secara bertahap.
 
-                        <div
-                            class="skill-card"
-                            data-animation="fade-up"
-                        >
-
-                            <span class="skill-number">
-                                01
-                            </span>
+                </p>
 
 
-                            <i class="bi bi-filetype-html"></i>
+                <div class="about-stats">
 
 
-                            <h3>
-                                HTML
-                            </h3>
+                    <div class="stat-box">
 
+                        <strong>
+                            2026
+                        </strong>
 
-                            <p>
-                                Struktur dan semantic
-                                website.
-                            </p>
-
-                        </div>
+                        <span>
+                            Tahun Aktif
+                        </span>
 
                     </div>
 
 
-                    <!-- CSS -->
+                    <div class="stat-box">
 
-                    <div class="col-md-6 col-lg-3">
+                        <strong>
+                            3+
+                        </strong>
 
-                        <div
-                            class="skill-card"
-                            data-animation="fade-up"
-                        >
-
-                            <span class="skill-number">
-                                02
-                            </span>
-
-
-                            <i class="bi bi-filetype-css"></i>
-
-
-                            <h3>
-                                CSS
-                            </h3>
-
-
-                            <p>
-                                Layout, design,
-                                responsive dan animasi.
-                            </p>
-
-                        </div>
+                        <span>
+                            Projects
+                        </span>
 
                     </div>
 
 
-                    <!-- JAVASCRIPT -->
+                    <div class="stat-box">
 
-                    <div class="col-md-6 col-lg-3">
+                        <strong>
+                            5+
+                        </strong>
 
-                        <div
-                            class="skill-card"
-                            data-animation="fade-up"
-                        >
-
-                            <span class="skill-number">
-                                03
-                            </span>
-
-
-                            <i class="bi bi-filetype-js"></i>
-
-
-                            <h3>
-                                JavaScript
-                            </h3>
-
-
-                            <p>
-                                Interaksi dan fitur
-                                website.
-                            </p>
-
-                        </div>
+                        <span>
+                            Skills
+                        </span>
 
                     </div>
 
-
-                    <!-- BOOTSTRAP -->
-
-                    <div class="col-md-6 col-lg-3">
-
-                        <div
-                            class="skill-card"
-                            data-animation="fade-up"
-                        >
-
-                            <span class="skill-number">
-                                04
-                            </span>
-
-
-                            <i class="bi bi-bootstrap"></i>
-
-
-                            <h3>
-                                Bootstrap
-                            </h3>
-
-
-                            <p>
-                                Membuat layout
-                                responsive.
-                            </p>
-
-                        </div>
-
-                    </div>
 
                 </div>
 
             </div>
 
-        </section>
+
+        </div>
+
+    </div>
+
+</section>
 
 
 
-        <!-- ==================================================
-             PROJECTS
-        ================================================== -->
+<!-- =========================================================
+     SKILLS
+     ========================================================= -->
 
-        <section
-            id="projects"
-            class="projects-section"
+<section
+    id="skills"
+    class="skills-section section-padding"
+>
+
+
+    <div class="container">
+
+
+        <div
+            class="section-heading"
+            data-animation="fade-up"
         >
 
-            <div class="container">
+            <p class="section-label">
+                03 — SKILLS
+            </p>
 
-                <div class="section-header">
+            <h2>
+                What I Can Do
+            </h2>
 
-                    <p class="section-number">
-                        04 / PROJECTS
+            <p>
+                Beberapa teknologi yang sedang saya pelajari
+                dan gunakan dalam membuat website.
+            </p>
+
+        </div>
+
+
+
+        <div class="row g-4">
+
+
+            <!-- HTML -->
+
+            <div
+                class="col-md-6 col-lg-3"
+                data-animation="fade-up"
+            >
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        <i class="bi bi-filetype-html"></i>
+                    </div>
+
+                    <h3>
+                        HTML
+                    </h3>
+
+                    <p>
+                        Membuat struktur website
+                        yang rapi dan semantic.
                     </p>
-
-
-                    <h2>
-
-                        Selected
-
-                        <em>
-                            works.
-                        </em>
-
-                    </h2>
-
-                </div>
-
-
-                <div class="row g-4">
-
-
-                    <!-- PROJECT 1 -->
-
-                    <div class="col-lg-7">
-
-                        <article
-                            class="project-card project-large"
-                            data-animation="fade-up"
-                        >
-
-                            <div class="project-image">
-
-                                <img
-                                    src="img/project1.jpg"
-                                    alt="Project pertama"
-                                >
-
-                            </div>
-
-
-                            <div class="project-content">
-
-                                <span>
-                                    01 / WEB DEVELOPMENT
-                                </span>
-
-
-                                <h3>
-                                    Project One
-                                </h3>
-
-
-                                <p>
-
-                                    Project website yang
-                                    dibuat sebagai bagian
-                                    dari proses pembelajaran
-                                    dan pengembangan kemampuan
-                                    web development.
-
-                                </p>
-
-
-                                <a
-                                    href="#"
-                                    class="project-link"
-                                >
-
-                                    VIEW PROJECT
-
-                                    <i class="bi bi-arrow-up-right"></i>
-
-                                </a>
-
-                            </div>
-
-                        </article>
-
-                    </div>
-
-
-
-                    <!-- PROJECT 2 -->
-
-                    <div class="col-lg-5">
-
-                        <article
-                            class="project-card"
-                            data-animation="fade-up"
-                        >
-
-                            <div class="project-image">
-
-                                <img
-                                    src="img/project2.jpg"
-                                    alt="Project kedua"
-                                >
-
-                            </div>
-
-
-                            <div class="project-content">
-
-                                <span>
-                                    02 / DESIGN
-                                </span>
-
-
-                                <h3>
-                                    Project Two
-                                </h3>
-
-
-                                <p>
-
-                                    Project personal
-                                    yang sedang
-                                    dikembangkan.
-
-                                </p>
-
-
-                                <a
-                                    href="#"
-                                    class="project-link"
-                                >
-
-                                    VIEW PROJECT
-
-                                    <i class="bi bi-arrow-up-right"></i>
-
-                                </a>
-
-                            </div>
-
-                        </article>
-
-                    </div>
-
-
-
-                    <!-- PROJECT 3 -->
-
-                    <div class="col-lg-5">
-
-                        <article
-                            class="project-card"
-                            data-animation="fade-up"
-                        >
-
-                            <div class="project-image">
-
-                                <img
-                                    src="img/project3.jpg"
-                                    alt="Project ketiga"
-                                >
-
-                            </div>
-
-
-                            <div class="project-content">
-
-                                <span>
-                                    03 / SYSTEM
-                                </span>
-
-
-                                <h3>
-                                    Project Three
-                                </h3>
-
-
-                                <p>
-
-                                    Eksperimen dan
-                                    pembelajaran
-                                    teknologi.
-
-                                </p>
-
-
-                                <a
-                                    href="#"
-                                    class="project-link"
-                                >
-
-                                    VIEW PROJECT
-
-                                    <i class="bi bi-arrow-up-right"></i>
-
-                                </a>
-
-                            </div>
-
-                        </article>
-
-                    </div>
 
                 </div>
 
             </div>
 
-        </section>
+
+
+            <!-- CSS -->
+
+            <div
+                class="col-md-6 col-lg-3"
+                data-animation="fade-up"
+            >
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        <i class="bi bi-filetype-css"></i>
+                    </div>
+
+                    <h3>
+                        CSS
+                    </h3>
+
+                    <p>
+                        Membuat tampilan website
+                        modern dan responsive.
+                    </p>
+
+                </div>
+
+            </div>
 
 
 
-        <!-- ==================================================
-             CONTACT
-        ================================================== -->
+            <!-- JAVASCRIPT -->
 
-        <section
-            id="contact"
-            class="contact-section"
+            <div
+                class="col-md-6 col-lg-3"
+                data-animation="fade-up"
+            >
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        <i class="bi bi-filetype-js"></i>
+                    </div>
+
+                    <h3>
+                        JavaScript
+                    </h3>
+
+                    <p>
+                        Menambahkan interaksi
+                        dan functionality.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- BOOTSTRAP -->
+
+            <div
+                class="col-md-6 col-lg-3"
+                data-animation="fade-up"
+            >
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        <i class="bi bi-bootstrap"></i>
+                    </div>
+
+                    <h3>
+                        Bootstrap
+                    </h3>
+
+                    <p>
+                        Membuat layout responsive
+                        dengan lebih cepat.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     PROJECTS
+     ========================================================= -->
+
+<section
+    id="projects"
+    class="projects-section section-padding"
+>
+
+
+    <div class="container">
+
+
+        <div
+            class="section-heading"
+            data-animation="fade-up"
         >
 
-            <div class="container">
+            <p class="section-label">
+                04 — PROJECTS
+            </p>
 
-                <div
-                    class="contact-content"
-                    data-animation="fade-up"
-                >
+            <h2>
+                Selected Projects
+            </h2>
 
-                    <p class="section-number">
-                        05 / CONTACT
+            <p>
+                Beberapa project yang pernah saya
+                buat selama belajar.
+            </p>
+
+        </div>
+
+
+
+        <div class="row g-4">
+
+
+            <!-- PROJECT 1 -->
+
+            <div
+                class="col-md-6 col-lg-4"
+                data-animation="fade-up"
+            >
+
+                <article class="project-card">
+
+
+                    <div class="project-image">
+
+                        <img
+                            src="img/project1.jpg"
+                            alt="Project 1"
+                        >
+
+                        <span>
+                            01
+                        </span>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <p>
+                            WEBSITE
+                        </p>
+
+                        <h3>
+                            Project One
+                        </h3>
+
+                        <a href="#">
+                            View Project
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+
+                    </div>
+
+
+                </article>
+
+            </div>
+
+
+
+            <!-- PROJECT 2 -->
+
+            <div
+                class="col-md-6 col-lg-4"
+                data-animation="fade-up"
+            >
+
+                <article class="project-card">
+
+
+                    <div class="project-image">
+
+                        <img
+                            src="img/project2.jpg"
+                            alt="Project 2"
+                        >
+
+                        <span>
+                            02
+                        </span>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <p>
+                            DESIGN
+                        </p>
+
+                        <h3>
+                            Project Two
+                        </h3>
+
+                        <a href="#">
+                            View Project
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+
+                    </div>
+
+
+                </article>
+
+            </div>
+
+
+
+            <!-- PROJECT 3 -->
+
+            <div
+                class="col-md-6 col-lg-4"
+                data-animation="fade-up"
+            >
+
+                <article class="project-card">
+
+
+                    <div class="project-image">
+
+                        <img
+                            src="img/project3.jpg"
+                            alt="Project 3"
+                        >
+
+                        <span>
+                            03
+                        </span>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <p>
+                            DEVELOPMENT
+                        </p>
+
+                        <h3>
+                            Project Three
+                        </h3>
+
+                        <a href="#">
+                            View Project
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+
+                    </div>
+
+
+                </article>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CONTACT
+     ========================================================= -->
+
+<section
+    id="contact"
+    class="contact-section section-padding"
+>
+
+
+    <div class="container">
+
+
+        <div
+            class="contact-box"
+            data-animation="fade-up"
+        >
+
+
+            <div class="row align-items-center g-4">
+
+
+                <div class="col-lg-7">
+
+
+                    <p class="section-label">
+                        05 — CONTACT
                     </p>
 
 
                     <h2>
-
-                        Let's create
-                        something
-
-                        <em>
-                            interesting.
-                        </em>
-
+                        Let's Work
+                        Together.
                     </h2>
 
 
                     <p>
 
-                        Punya project, ide, atau
-                        sekadar ingin berdiskusi?
-                        Jangan ragu untuk menghubungi
-                        saya.
+                        Punya project atau ingin
+                        berdiskusi? Jangan ragu untuk
+                        menghubungi saya.
 
                     </p>
 
+                </div>
 
-                    <div class="contact-actions">
 
 
-                        <!-- EMAIL -->
+                <div class="col-lg-5">
+
+
+                    <div class="contact-links">
+
 
                         <a
                             href="mailto:emailkamu@gmail.com"
-                            class="button button-primary"
                         >
-
-                            Send Email
 
                             <i class="bi bi-envelope"></i>
 
+                            <span>
+                                emailkamu@gmail.com
+                            </span>
+
                         </a>
 
-
-                        <!-- WHATSAPP -->
 
                         <a
                             href="https://wa.me/6281234567890"
                             target="_blank"
-                            rel="noopener noreferrer"
-                            class="button button-outline"
                         >
-
-                            WhatsApp
 
                             <i class="bi bi-whatsapp"></i>
 
+                            <span>
+                                WhatsApp
+                            </span>
+
                         </a>
+
 
                     </div>
 
                 </div>
 
-            </div>
-
-        </section>
-
-    </main>
-
-
-
-    <!-- ==================================================
-         FOOTER
-    ================================================== -->
-
-    <footer>
-
-        <div class="container">
-
-            <div class="footer-content">
-
-                <div>
-
-                    <span class="brand-symbol">
-                        ●
-                    </span>
-
-                    PORTFOLIO
-
-                </div>
-
-
-                <p>
-
-                    © 2026 ceamberly.
-                    All rights reserved.
-
-                </p>
-
-
-                <a href="#home">
-
-                    Back to top
-
-                    <i class="bi bi-arrow-up"></i>
-
-                </a>
 
             </div>
+
 
         </div>
 
-    </footer>
+    </div>
+
+</section>
+
+
+</main>
 
 
 
-    <!-- ==================================================
-         BOOTSTRAP JAVASCRIPT
-    ================================================== -->
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
 
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-    </script>
+<footer class="footer-section">
 
 
-    <!-- ==================================================
-         CUSTOM JAVASCRIPT
-    ================================================== -->
+    <div class="container">
 
-    <script src="js/script.js"></script>
+
+        <div class="footer-content">
+
+
+            <div>
+
+                <h3>
+                    Fahmi.
+                </h3>
+
+                <p>
+                    Web Developer • Student
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <p>
+                    © 2026 Fahmi.
+                    All Rights Reserved.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+</footer>
+
+
+
+<!-- =========================================================
+     BOOTSTRAP JS
+     ========================================================= -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+></script>
+
+
+<!-- =========================================================
+     CUSTOM JS
+     ========================================================= -->
+
+<script
+    src="js/script.js"
+></script>
+
 
 </body>
 
