@@ -29,7 +29,7 @@ jobs:
       - name: Upload Portfolio
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './tugas 2'
+          path: './tugas-bootstrap'
 
       - name: Deploy
         id: deployment
