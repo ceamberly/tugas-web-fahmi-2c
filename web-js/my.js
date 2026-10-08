@@ -1,0 +1,1 @@
+    alert("Selamat Datang di Tugas 1 Javascript");
