@@ -1,1 +1,1 @@
-    alert("Selamat Datang di Tugas 1 Javascript");
+    alert("Selamat Datang di Tugas 2 Javascript");
