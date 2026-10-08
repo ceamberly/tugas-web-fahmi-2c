@@ -30,7 +30,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: './tugas 2'
-.
+
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
