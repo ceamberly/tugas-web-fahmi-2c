@@ -1,4 +1,4 @@
-name: Deploy tugas-bootstrap to GitHub Pages
+name: Deploy tugas-bootstrap
 
 on:
   push:
@@ -13,11 +13,15 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Checkout
@@ -29,18 +33,8 @@ jobs:
       - name: Upload tugas-bootstrap
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './tugas-bootstrap'
+          path: ./tugas-bootstrap
 
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    runs-on: ubuntu-latest
-
-    needs: build
-
-    steps:
-      - name: Deploy
+      - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
