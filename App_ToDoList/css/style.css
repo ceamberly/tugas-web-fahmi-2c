@@ -23,13 +23,12 @@ h2 {
 
 fieldset {
     color: white;
-    background-color: rgba(8, 47, 114, 0.72);
+    background-color: #1410108e;
     border: 1px solid #e5e7eb;
     border-radius: 16px;
     padding: 24px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
 }
-
 
 label {
     display: block;
@@ -74,7 +73,7 @@ button:hover {
 
 #list-barang {
     color: white;
-    background-color: rgba(8, 47, 114, 0.72);
+    background-color: #1410108e;
     border: 1px solid #e5e7eb;
     border-radius: 16px;
     padding: 16px 24px;
@@ -93,15 +92,12 @@ button:hover {
     border-bottom: none;
 }
 
-/* Mengubah link "Hapus" menjadi tombol seperti "Simpan" */
 #list-barang li a {
     display: inline-block;
-    background-color: #37424e; /* Ganti ke #c92a2a kalau mau warna merah */
     background-color: #37424e;
     color: #ffffff;
     text-decoration: none;
     border-radius: 8px;
-    padding: 6px 14px; /* Gunakan 10px 18px jika ingin ukurannya persis sebesar tombol Simpan */
     padding: 6px 14px;
     font-size: 13px;
     font-weight: 600;
@@ -110,7 +106,6 @@ button:hover {
 }
 
 #list-barang li a:hover {
-    background-color: #343a40; /* Ganti ke #a61e1e kalau pakai warna merah */
     background-color: #343a40;
     color: #ffffff;
 }
