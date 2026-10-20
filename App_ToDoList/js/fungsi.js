@@ -1,31 +1,56 @@
+
 var barang = ['pensil', 'buku', 'penggaris'];
- 
-// menampilkan data
+
+// Menampilkan data barang
 function ShowData() {
-    var listBarang=document.getElementById('list-barang');
- 
+    var listBarang = document.getElementById('list-barang');
+
     listBarang.innerHTML = '';
- 
-    for (var i=0; i<barang.length; i++) {
-        var linkHapus='<a href="#" onclick="DelData('+i+')">Hapus</a>';
-        listBarang.innerHTML+='<li>'+barang[i]+' '+linkHapus+'</li>';
-    };  
+
+    for (var i = 0; i < barang.length; i++) {
+        var li = document.createElement('li');
+        var tombolHapus = document.createElement('a');
+
+        li.appendChild(document.createTextNode(barang[i] + ' '));
+
+        tombolHapus.href = '#';
+        tombolHapus.textContent = 'Hapus';
+
+        tombolHapus.onclick = function(index) {
+            return function(event) {
+                event.preventDefault();
+                DelData(index);
+            };
+        }(i);
+
+        li.appendChild(tombolHapus);
+        listBarang.appendChild(li);
+    }
 }
- 
-// menambahkan data
+
+// Menambahkan data barang
 function AddData() {
-    var input=document.getElementById('nama');
-    //memasukan data ke array
-    barang.push(input.value);
+    var input = document.getElementById('nama');
+    var namaBarang = input.value.trim();
+
+    if (namaBarang === '') {
+        alert('Nama barang tidak boleh kosong!');
+        input.focus();
+        return;
+    }
+
+    barang.push(namaBarang);
+    input.value = '';
+
     ShowData();
+    input.focus();
 }
- 
-// menghapus data
+
+// Menghapus data barang
 function DelData(id) {
-    // menghapus elemen dari indeks array
-    barang.splice(id,1);
+    barang.splice(id, 1);
     ShowData();
 }
- 
-//menjalankan fungsi tampil data
+
+// Menampilkan data saat halaman dibuka
 ShowData();
