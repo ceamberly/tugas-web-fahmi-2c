@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+body {
+    background-image: url("../img/56f9194f64497ad28043c964d2e45970.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #212529;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    -webkit-font-smoothing: antialiased;
+}
+
+h2 {
+    color: white;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 24px;
+}
+
+fieldset {
+    color: white;
+    background-color: #1410108e;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 11px 14px;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: inherit;
+    font-weight: 500;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: #212529;
+    box-shadow: 0 0 0 3px rgba(33, 37, 41, 0.08);
+}
+
+button {
+    background-color: #37424e;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 18px;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    background-color: #343a40;
+}
+
+#list-barang {
+    color: white;
+    background-color: #1410108e;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 16px 24px;
+    margin-top: 24px;
+    min-height: 30px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+#list-barang li {
+    padding: 12px 4px;
+    border-bottom: 1px solid #f1f3f5;
+    font-weight: 500;
+}
+
+#list-barang li:last-child {
+    border-bottom: none;
+}
+
+/* Mengubah link "Hapus" menjadi tombol seperti "Simpan" */
+#list-barang li a {
+    display: inline-block;
+    background-color: #37424e; /* Ganti ke #c92a2a kalau mau warna merah */
+    background-color: #37424e;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 6px 14px; /* Gunakan 10px 18px jika ingin ukurannya persis sebesar tombol Simpan */
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-left: 10px;
+    transition: 0.2s ease;
+}
+
+#list-barang li a:hover {
+    background-color: #343a40; /* Ganti ke #a61e1e kalau pakai warna merah */
+    background-color: #343a40;
+    color: #ffffff;
+}
